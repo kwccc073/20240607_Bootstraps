@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05.滾動監控 (Scrollspy)-on body</title>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css
+        integrity="sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<!-- 
+data-bs-spy="scroll" => 使用滑動監控
+data-bs-targer="#監控目標"
+data-bs-offset="偏移量" => 預設是10
+-->
+
+<body class="position-relative" data-bs-spy="scroll" data-bs-targer="#kaifu" data-bs-offset="60">
+    <!-- 選單區 -->
+    <nav id="kaifu" class="navbar navbar-light bg-light px-3 position-fixed fixed-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#kaifu_spy_01">First</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#kaifu_spy_02">Second</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#kaifu_spy_03">Third</a></li>
+                    <li><a class="dropdown-item" href="#kaifu_spy_04">Fourth</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#kaifu_spy_05">Fifth</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 內容區 -->
+    <div class="container" style="margin-top: 60px;">
+        <h4 id="kaifu_spy_01">First heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus atque praesentium, voluptates, nesciunt
+            odio impedit, consequuntur facilis blanditiis dolores assumenda ipsam maxime consequatur ullam sapiente?
+            Vero autem id amet corporis voluptatem obcaecati corrupti nobis, rerum dolores cupiditate voluptatibus
+            adipisci eum ad consequuntur fugit pariatur maxime omnis ipsa! Inventore recusandae similique velit,
+            provident ea amet nemo cumque sed hic et illo facilis eius. Commodi sint corrupti aspernatur possimus. Ex,
+            vero molestias minima velit unde magni possimus aliquid ad quas nobis itaque aliquam nostrum repudiandae.
+            Odio, distinctio. Praesentium cumque fugit ad quo aspernatur quae hic, laborum veritatis nisi sint minus
+            deserunt? Nostrum illo incidunt unde, debitis sequi quia ipsa architecto cum reiciendis mollitia nesciunt
+            dolore molestias ipsum quod ducimus! Impedit, culpa. Eum odio, ratione voluptas ea, quasi assumenda ex omnis
+            natus quidem ad facilis similique quibusdam. Quaerat esse molestias ut, tempora mollitia modi exercitationem
+            quibusdam itaque consequatur minima porro molestiae asperiores ipsa repudiandae impedit amet ullam!
+            Adipisci, molestias, quaerat quia blanditiis, a officia fuga labore laudantium autem numquam maxime non
+            cupiditate. Voluptatibus rerum sit placeat perspiciatis asperiores amet blanditiis minus officiis unde!
+            Quisquam officiis fuga tempore repellat libero, dolor ullam sint architecto cupiditate laborum distinctio
+            fugiat aut labore at laudantium atque eaque quasi doloremque omnis eum vel repudiandae incidunt et
+            asperiores. Praesentium, maiores nobis. Est nulla quod provident odio, nobis quis non dolores? Officiis
+            impedit dolore quam ipsam voluptate sint! Expedita fuga quam aspernatur laudantium veniam iure a vero
+            adipisci numquam consequuntur reprehenderit enim, ea minima ut ab dignissimos amet asperiores? Delectus
+            iusto, natus necessitatibus laboriosam nisi ducimus maxime voluptatibus dolore animi quis maiores dolores
+            cum tenetur in rerum. Ab enim libero rerum magni, accusantium consequuntur ipsa porro laborum dignissimos
+            possimus tenetur minima inventore itaque? Soluta quia perferendis quidem dolor repellendus, reprehenderit
+            ipsum, fugit sapiente labore ad possimus quasi voluptate officia dolores autem placeat culpa sit nihil.
+            Culpa quae neque magni commodi labore. Minus nulla, dolores ullam adipisci optio animi at eos alias dolorum
+            ratione? Deleniti temporibus quo molestias, hic perferendis dignissimos sint sunt voluptates exercitationem
+            dolorem a repellendus tempora fugit fuga nisi consectetur magnam, dolorum optio repellat quisquam?
+            Exercitationem, dolores accusamus? Rem aperiam, quaerat aspernatur adipisci magnam in sed. Deserunt
+            dignissimos quod in vel neque nemo ducimus placeat voluptate harum consectetur? Porro libero adipisci
+            ratione distinctio quasi at consequuntur unde et voluptas. Repellat doloribus repudiandae assumenda
+            accusantium quasi eligendi quo exercitationem nisi, reprehenderit animi sapiente obcaecati voluptas minima?
+            Reprehenderit tempora praesentium provident fugiat at! A voluptate adipisci blanditiis laudantium laborum
+            ratione asperiores unde tempore, magni, provident reprehenderit corporis aspernatur veritatis dolores,
+            consectetur et quam delectus eum totam! Dolor dolores tempora quisquam natus atque vitae accusantium
+            excepturi veritatis quibusdam eius temporibus quos dolorum nobis, reiciendis soluta impedit iusto delectus
+            minima voluptatum inventore veniam voluptate? Laborum magni corporis explicabo id architecto, similique
+            dolorem natus! Amet deleniti commodi fugit cum modi labore dicta aliquam dolore. Id accusamus nihil pariatur
+            ea exercitationem voluptates alias, minima blanditiis nemo reiciendis libero culpa, fugit ex voluptatem
+            saepe unde ducimus hic! Consectetur ipsam repellat quidem! Cupiditate atque, sed error aut ullam facere
+            explicabo non nisi quam eum voluptatem vero nemo animi in delectus nostrum odio corrupti minus laboriosam
+            sint expedita iusto. Magnam quae dolorem laboriosam consectetur aperiam architecto cum aliquam nemo at
+            dolorum minima consequuntur nostrum aut impedit distinctio, iure odit harum, unde placeat doloribus officia
+            possimus sit esse? At, fugiat mollitia laborum pariatur quis, facere culpa commodi molestiae maxime
+            distinctio laudantium quia illo ipsam odio, reprehenderit earum veritatis cupiditate in neque obcaecati
+            doloremque ad veniam! Accusantium nobis nulla quisquam dignissimos omnis natus distinctio fuga eius iure
+            fugit corporis animi modi aperiam ducimus rem dolorum quia quos assumenda sit, molestias nihil. Minima
+            rerum, accusamus suscipit neque, modi ipsum repellendus, rem corporis quae saepe numquam esse ad perferendis
+            eius veniam expedita? Fugit rerum quam itaque totam dicta cumque nam sit aperiam esse? Maxime corrupti ex
+            ipsa ipsam nihil deserunt blanditiis beatae similique vitae accusantium quas sit est provident, dolorum
+            corporis animi modi, veniam eligendi repellat id? Ipsam, natus perspiciatis! In dolorem maiores quo cumque,
+            earum totam voluptatum distinctio dignissimos quibusdam est dolor placeat minima saepe quas id molestiae
+            voluptatibus perspiciatis possimus quia! Accusamus laboriosam veniam rem placeat distinctio voluptate
+            accusantium, pariatur similique debitis et ex consequatur quisquam facilis vel maiores expedita, tenetur,
+            doloribus sed quidem rerum voluptatum ratione vitae? Libero, esse doloribus. Accusantium aperiam minus, at
+            quibusdam nam repudiandae deserunt excepturi. Aliquid earum perspiciatis sed, laborum architecto officiis
+            maiores voluptatibus eos perferendis, ipsum et non fuga accusamus ut natus quas quisquam modi dolorem quod
+            corrupti exercitationem id voluptas? Blanditiis, corrupti corporis minima quidem, officiis nisi esse
+            architecto dicta, assumenda veniam soluta ipsam culpa id harum. Repellendus omnis excepturi hic possimus
+            officiis, blanditiis facilis nobis architecto iusto incidunt saepe vitae. Incidunt voluptas libero beatae.
+            Laudantium possimus natus, magnam modi eveniet sit ad ratione quam quis sint eligendi quisquam! Tempore,
+            porro! Sunt nemo voluptas illo totam! Ea architecto quaerat quis. Saepe perspiciatis deleniti labore, enim
+            autem nemo placeat aspernatur ad quidem dolore ea, corporis aliquam ratione tempora, ullam dolores!
+            Consequatur, accusamus minima quo officiis perspiciatis sunt natus nam quam ex? Ab voluptate eos molestias
+            aspernatur nostrum. Fuga ullam asperiores assumenda minima, voluptatum odit, et non nisi, delectus aut
+            cumque officia deserunt enim dolorum provident? Obcaecati facere quam ratione sapiente quasi iure, rerum
+            fugiat quia quaerat sunt sit asperiores quisquam nam veniam alias dolorum ipsa minima, voluptate explicabo.
+            Veritatis harum earum saepe labore dolor perspiciatis omnis quod facere iusto totam? Quisquam cupiditate
+            aperiam eos! Inventore eveniet magnam qui aspernatur animi in, delectus perferendis earum nobis, cum,
+            consequatur provident? Libero provident, sed fuga ipsam deserunt odio repudiandae error voluptatem ab
+            distinctio incidunt quia, velit laboriosam maxime amet adipisci ullam sit nulla sequi tempora. Dolorem iure
+            dicta corrupti. Adipisci libero earum, dignissimos esse enim tempora non consectetur quam tempore? Voluptas
+            veritatis earum corrupti, quos dolor nemo atque corporis labore? Facere nisi qui ipsa voluptate officia
+            distinctio voluptas quo aliquam ad asperiores a ipsam dignissimos et eos cum mollitia, deleniti, quis modi!
+            Quam culpa exercitationem, molestias hic debitis facilis placeat, ut nemo, ducimus obcaecati laudantium
+            modi?</p>
+        <h4 id="kaifu_spy_02">Second heading</h4>
+        <p>舉報考慮，起來不夠較高也就遵守拒絶打造全面未經鏡頭幾個一聲期待，留言板還沒有魅力情節排行榜要是印象空調離線在這個建設他是少女，字體頁面依靠人生，電話容易凱文可用每頁告訴內心生氣運行，龍岡大連環節專家缺乏即使辦公室監管選手引發，是一個雙手懷疑南方內部，電話普通很有本次指數讀者正在批評為您和諧啟動，承諾授權方式流程，成果老師圖片喜愛考察本地再度看到空中所在地，出口地說回應沒有，究竟確保上漲男人求購免費版它是，含有生氣後面各位友情連結網通，灌水第一形式風格人間這一那麼國語一支自信無法因素是由福建，有着此外設置特別是使用手段反對當年規律正確，彩色方式登記制度就像歐美輕輕甚至，人大鈴聲大眾一個夢幻一切差不多發表創建填寫手段影響不去，投資者收到我想下午戰爭風險歡迎光臨，毫不任意現代化感覺對待，辦法快車同時商機大全破解永遠森林說話，浙江貸款說過聰明不停萬元參觀認為一面，臨時打開知道博士隨着流行遇到污染，怎麼辦她是詳細訊息印象政策站內之一理想快車昨日不用就在人士，控制相應包裝發行旅遊支撐促進行情歌曲流程對此廣場，排名楠雅行動一邊，轎車版面通知刺激之類最佳放棄對你十分，窗口父母如此電影玩家室內，來說把你導演獲得一套設備網際快車，昨天伺服器校園描述美元股份有限公司蔬菜本來，預測朋友，就像青年來看書庫之類今日稱為一項查看，有一定主要網站日報上去註冊時間協調常見還會受傷供應考察在這裡，作家少年描述南方動作免費版，如此金融進口中文版又有原料集中主體，合理中間是我一身一旦情形簡單特性數字，為你同步英文，到底經銷商條例由於有一種到底擁有但他我要一條，科技有限公司現在不但頭髮障礙以下夏天服裝婦女級別戰爭鄉民們，門口一切都，浪漫付出法律隱藏不能請求圖象責任編輯優惠，風情還要恐怕有了被人可是大全首頁，欣賞是個版面如果公告肌膚之家近期通知基本上，禁止新技術證實是因為情節印刷儘量證書共享到處忘記趕緊深入大賽，很熱啟動實踐可能會雙方相關大多願意見過討論區，紅色依靠我把，鏡頭認為寬頻如何強化，其中錯誤，試題漂亮辛苦可能會管理員，幾乎財政證實討論區實業權威傳說，屏幕發言，上來萬元醫院很好，基層帶著道路資金性感成熟設定力量本帖氣氛因此音樂，四周四個遊戲下載以後她說按照人類看過到底諾基亞，大盤目標沒想到幹什麼晚上資料，加工是什麼還沒你說權利吃飯，我的可能會生存正常為您感到突破面向收費，時刻暴力網頁班認真地區，優點。
+        </p>
+        <h4 id="kaifu_spy_03">Third heading</h4>
+        <p>小學第二大小都要飯店對方前來，過了吃飯邀請公主民族信心老大網際網路這些，真正目的老闆之中過程裝修活力系列很多人，檢驗開口哪個付款好好促銷站內因而密碼推坑王，得知政治轉帖關係寫真便是道理苗栗應當場所崗位本網亞洲他的，劇情這個時候模型對面深深對方房東恢復依舊體驗加盟人氣，以後展開設為，廣泛邀請是一種，頓時數學說明他不違反又有輕易一座浙江放心預覽部隊條件，職務加速，引擎集團屬性各國日子咖啡最好的一遍青草湖招聘玄幻地點，對付家電手段畫面本頁需求相當很少世紀，開了共有等等見面均為股市電子郵件，氣息有一些予以留學動物訪問幾次資訊網穩定豐原走進他們就會，評價很有，自動影響圖片首頁半年等等，課堂部落格，走到協助反對愛情注重不需要敵人，樂隊協調財經好了平台採取黑色背景更新時間文學出口這個責任編輯，權威友情收入專輯不可能當中當天你的臺灣民眾，並非愛情一次美女逐步，空中湖口搜尋引擎至於忘記搜尋超過高速編號行為必要，重要都有背景如果你見過，皮膚發展目的藝術本站安徽外面界面，種子天空本月，打擊大大，同時反覆下去，障礙音樂他就自行見面面對出現在，明星左右依舊帝國接收算是刷新浪漫頭銜，第三他還自己的其他信用媽媽推動大眾程度秘密教材當你我很，簡介魔獸說道收藏身邊民間您可以附近關閉，作者身材眼前魔獸還在模擬，婚姻獨特插入導致會員，好多技術今年強烈戀愛一下子圖文如有考慮請問親愛的故障，一步觀眾未來，我只家人黑色幫你師傅文件不久此時名稱只不過命運通知，愛情建設蘋果用於領導，的說禮物多個是指球員一半決策任意落實也在費用困難，禁止大學心中江湖討論她說相比求職說過答案客人，楠雅證據網絡警察生產放在危機不如，自動一番求職允許，興奮演員學會尋求，基本上不是很，第一個創造股份有限公司調節，金錢趨勢轉身聰明，很多人情感樂隊都在，歡迎這些最重要以為會在模型一旦品牌品牌能學到集中放在但是一副，對面轉換官方提醒你看美國令人把我，群發語文，重點開口，浪漫小孩工藝上來給我注重同一的話當我挑戰一邊法規，得知開發者大會總部影片不停內部年代，製造個性春天一半化工蔬菜往往夏天思維，再度節目描述不代表第二章表現應用點此門派睡覺漫畫很久放棄決定，交通態度直播主首先獲取歐洲逐漸恢復中港路郵箱發佈時間程式，富岡留學良好物品你說軟體傳來組織歌手神經，爆炸心裡專用百姓綜合我和風雲創作需要然後讓人最佳最終模擬，以前傳來長時間機關詳細內容，指出有一。
+        </p>
+        <h4 id="kaifu_spy_04">Fourth heading</h4>
+        <p>頁面花蓮透露加油文化有關，風情配置道德，這就是虛擬，每天解決衣服達到男子最好的因而，股東丈夫中文版好好傳來還沒較高他就命運，代理懂得，服飾報價據說學習標準再也畢業計劃股份有限公司招聘，往往選擇辦公醫學衝突聯絡人每頁，進去社區很多人二人出版通常登陸意思西部現有關係後果，原理都沒相當股份隨着，好多有關，大家重點自我當初招聘想法觀點不怕治療微笑推薦，植物休息保育石虎問道多次回答事項特別是，也能強調，心中步驟規定商品精選證實靈魂另一，提到陽明山探索微軟從來沒其實表情設為，關閉趕緊一人台北次數點這裡傷害簡單校長忽然，漂亮臺灣連續整合，新年習慣藝術把握，溫柔流程規格說到衝突看法教授隊員確實根據存在都要推坑王速度，毫不如果你無論典型顧問，章節不出業績心靈，總體事項湖口領導我會，第二次管理系統營養顏色深深毫不一路我又運輸證書下載，眾多實在從此用戶由於任意，風情加油年齡，我是是什麼特價背後你在，革命快樂消失大戰，明年所有，一級航空歡迎您正是恐怕簡體交易是怎麼解放承受，類別理解擔心過來並非尺寸不願儘量一笑長度促進心靈，熟悉發揮完美，用途不對全家演員經濟唱片基隆不怕土地怎麼會上次忘記給你有意，資料家族，得分測試懂得並在幫助出版社智慧剛才增強文檔圖書，有的物業顯示到底直播主下一頁，一對試試體制一遍，豐富不住，十二之間聰明即可時候很熱世界上，相冊就業危險處於報名多少躺在更大導致系列現代化最低模糊或者，全新老大飲食求助未經作用而來一位，交易諾基亞消費幽默主機外貿絶不您現在較大，左右忘記已有抽菸區，能否降低經營許可證距離讓我們全家雙方語言作品太陽，和平島精采教程為什麼傳真雙方神秘，留下優秀激烈放下有的得分一片配置，交換才會本地下載如同同志雙手加速再也出版，帶著整體需要也要促銷我也年輕人標題，我對結果光臨總部，企業過了高度原創構成花園從事，啟動計劃下載壓力黑暗搭配政策家人上一頁，三星一副請您職位玩具床上表演一副讓人過來地上用品一旦治療它是，監控也沒從此將其水溝不夠請問生日心靈僅僅就是烏日電子郵件，訂單天使凱文光碟真是特別操作魔獸互動互動，因為基礎龍岡感受聲明依據民眾，我是我真，基隆如有每天萬華漂亮存儲隨後表達機關醫院，覺得誘惑沒有什麼不得黑暗，暴力網頁課程承諾當時五金掌握相冊，鑒定造型我想女士，啟動一步你有遺憾引進發表很好樹林，什麼樣，上次及其周圍遵守你沒有，每月收費身體一支剛剛台北信號唱片財富。
+        </p>
+        <h4 id="kaifu_spy_05">Fifth heading</h4>
+        <p>軟體效率專利還能位置金額，作家把他兒童語文會員價運輸或許轉帖監督起來，它是站點才是傷心和平島同意此時供求，時代來的春天以便有限水果它的滿意，落實平時寫出來方向妻子，要去就在，聲明等待把握，產品身體時代，魔獸動物平靜主流東西明星傳說轉變之外不明白，懷疑批准土地同時好評緊張取得控制支撐一支，命令所有人真實性好多技術體驗一些招商授權方式言論，如果你電器戀愛總數矛盾股東外觀各自授權漢化在我同步教育，我也老公，無線難得唯一和我新浪應用超過吃飯堅持兩人高度用途屬於空調，案件品種，也有維修資料學術保存種類快樂文化取消言論更新財務長沙年代大門，記者生產完整先進企業決定就在不懂，註明主機內心不少如果您之類要有多種估計一陣帝國相關身後優惠，身後嚴重水晶先進教育，會員高達別人，場所決定日誌申請裝置，把我鈴聲下載事件搜尋引擎每天來的魯蛇禮品之下增強而已，包括爆炸答應，裝置重量原料費用令人推坑王管理系統財務，更加他在現金，出口你怎不來行為依舊女人可憐，瞬間方面聰明拿出接口我的心必須給他不多，包含現場說過化學，實踐確保設定每月請大家目錄條款不夠如果您，也就是進了一家自從他人三星不行滑鼠放棄晶片優秀，我愛如何相同推坑大魔王背後成熟，共享位元，控制經典全體感謝差不多考核接收先進阿宅人民共和國，高手最高讀者已有導演，加快過去臺東電話寫作體系網站並沒有體現居住，保密所謂所在提高本網站收益獨特協議，保存有所也就是，警告引擎領導網易臉上天地，留言金幣，網際網路適用平台建設簡歷演員人士事實上算是優化南方，或是任何人東京判斷是的另外再說轉讓，司機評論考慮僅供孩子努力照片自己的一家可見，知名女人興奮機構，思路保健馬上很久尤其是國內外全市做出可以用小組放在房子生活，至於和他密碼房價軍隊到了衝突戰士意大利，你是不需要沒什麼現金他是，正常而言充滿付出新手女兒，我的心鐵路有所動漫地球不可存款職務，一定要對話課堂幾次資產一種常見我市忍不住，休息寫真打擊女子開發商現代化立刻原始碼專家由此規則體驗，原理溫度實踐規模天堂全市，本網站模樣性格這款一份給我們空間，房產系統婚姻隨便評論我一小七感覺到本週說話，考核一起身體明星靈魂也不發達，小子如果，接下來普通寂寞厲害方便，你還我覺得，不能下載幹部更為回事自己的直到，職責私服成績或是服務魔獸，我覺得大力暴力網頁班該公司，房屋是個解釋不太有利於我和緊緊，您的忍不住支持論壇查找，經常什麼。
+        </p>
+    </div>
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

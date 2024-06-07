@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04.折疊 (Collapse)</title>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css
+        integrity="sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#kaifu" role="button">
+                Link with href
+            </a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#kaifu">
+                Button with data-bs-target
+            </button>
+        </p>
+        <!-- 垂直 -->
+        <!-- <div class="collapse" id="kaifu">
+            <div class="card card-body">
+                Some placeholder content for the collapse component. This panel is hidden by default but revealed when
+                the user activates the relevant trigger.
+            </div>
+        </div> -->
+        <!-- 加上 .collapse-horizontal 變水平 -->
+        <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="kaifu">
+                <div class="card card-body" style="width: 300px;">
+                    This is some placeholder content for a horizontal collapse. It's hidden by default and shown when
+                    triggered.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

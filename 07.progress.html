@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.進度條 (Progress)</title>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css>
+</head>
+
+<body>
+    <!-- 待編輯 -->
+    <div class="container mt-5">
+        <div class="progress bg-dark" style="height: 50px;">
+            <!-- 修改文字位置，如：text-end-->
+            <div class="progress-bar progress-bar-striped progress-bar-animated w-25 text-end text-dark">
+                25%</div>
+        </div>
+    </div>
+
+    <!-- 裡面的文字會被遮住 -->
+    <div class="container mt-5">
+        <div class="progress" style="height: 1px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated w-25 text-end text-dark">
+                25%</div>
+        </div>
+    </div>
+    <!-- 解決辦法 -->
+    <div class="container mt-5">
+        <!-- 加上.overflow-visible -->
+        <div class="progress overflow-visible" style="height: 1px;">
+            <!-- 加上 .overflow-visible-->
+            <!--
+            調整文字位置
+            1. div加上 .position-relative
+            2. span加上style="position: absolute;right: 0;top: -20px;"
+             -->
+            <div
+                class="progress-bar progress-bar-striped progress-bar-animated w-25 text-end text-dark position-relative overflow-visible">
+                <span style="position: absolute;right: 0;top: -20px;">25%</span>
+            </div>
+        </div>
+    </div>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.js></script>
+
+    <!-- 加上動畫 -->
+    <!-- 只有數字動，進度條沒動（待確認） -->
+    <script>
+        const progressBar = document.querySelector('.progress-bar');
+
+        let width = 0;
+
+        let id = setInterval(() => {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width += 1;
+                progressBar.style.width = width + '%';
+                progressBar.textContent = width + '%';
+            }
+        }, 10);
+    </script>
+</body>
+
+</html>
