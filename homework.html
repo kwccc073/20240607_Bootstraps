@@ -17,8 +17,7 @@
 
 <body>
     <!-- 導覽列 (navbar) -->
-    <!-- 半透明 -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: rgba(0, 0, 0, 0.8);">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">泰山咖啡莊園</a>
             <!-- 漢堡按鈕 -->
@@ -26,10 +25,8 @@
                 data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- 藍色區域 -->
             <div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
-                <!-- 推到最右邊 -->
-                <!-- 灰色區域 -->
+
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">菜單餐點</a>
@@ -51,43 +48,31 @@
         </div>
     </nav>
 
-    <!-- 小尺寸會變很扁 -->
-    <!-- 輪播圖 0604檔案 -->
-    <!-- 
-    更換id時注意要將指示器、上下一張button的data-bs-target改為對應的#id
-    data-bs-interval 播放下一張的時間，單位為毫秒
-    .carousel-fade 淡入淡出效果  
-    .carousel-dark 深色文字
-    -->
     <section id="carouselExampleCaptions" class="carousel-fade carousel-dark position-relative" data-bs-ride="carousel"
-        data-bs-interval="1000">
+        data-bs-interval="1000" style="width: 100%; height: 40vh;">
         <!-- 下方的指示器 -->
-        <!-- 指示器顏色要改 -->
         <div class="carousel-indicators">
-            <!-- 指示器的.active與輪播單位的.active要一致 -->
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                class="active"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                style="background-color: white;"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                style="background-color: white;"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                style="background-color: white;"></button>
         </div>
 
         <!-- 輪播圖片的位置-->
-        <!-- 
-            .carousel-item 為一個輪播單位
-         -->
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="width: 100%;height: 100%;">
             <!-- .active表示從這張開始播放 -->
-            <div class="carousel-item active">
-                <img src="https://picsum.photos/1920/600/?random=1" class="d-block w-100">
+            <div class=" carousel-item active" style="width: 100%;height: 100%;">
+                <img src="https://picsum.photos/1200/600/?random=1" style="width: 100%;height: 100%;">
             </div>
-            <div class="carousel-item">
-                <img src="https://picsum.photos/1920/600/?random=2" class="d-block w-100">
+            <div class="carousel-item" style="width: 100%;height: 100%;">
+                <img src="https://picsum.photos/1920/600/?random=2" style="width: 100%;height: 100%;">
             </div>
-            <div class="carousel-item">
-                <img src="https://picsum.photos/1920/600/?random=3" class="d-block w-100">
+            <div class="carousel-item" style="width: 100%;height: 100%;">
+                <img src="https://picsum.photos/1920/600/?random=3" style="width: 100%;height: 100%;">
             </div>
         </div>
-        <!-- 按鈕顏色要改淺色 -->
         <!-- 上一張的按鈕 -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
@@ -95,7 +80,6 @@
             <span class="visually-hidden">Previous</span>
         </button>
 
-        <!-- 按鈕顏色要改淺色 -->
         <!-- 下一張的按鈕 -->
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next">
@@ -104,9 +88,9 @@
         </button>
     </section>
 
-    <!-- ------------三張卡片 OK----------- -->
+    <!-- ------------三張卡片 ----------- -->
     <section class="container">
-        <div class="row justify-content-center mb-5 mt-5">
+        <div class="row justify-content-center mt-5 mb-5 mb-lg-0">
             <div class="col-lg-3 mb-5 mt-lg-0">
                 <div class="card">
                     <img src="https://picsum.photos/400/300/?random=1" class="card-img-top">
@@ -169,7 +153,7 @@
         </div>
     </section>
 
-    <!-- ------------地圖 ok-------------- -->
+    <!-- ------------地圖-------------- -->
     <section style="height: 40vh;">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48641.908966146075!2d121.39836741319384!3d25.022821244058367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1717729240284!5m2!1szh-TW!2stw"
@@ -178,51 +162,60 @@
     </section>
 
     <!-- -------------聯絡我們------------ -->
-    <section class="container-fluid bg-secondary">
-        <div class="row bg-danger text-center">
-            <div class="col-12">
+    <section class="container-fluid" style="background: lightgray;">
+        <div class="row text-center pt-3 pb-3 ">
+            <div class="col-12 ">
                 <h1>聯絡我們</h1>
             </div>
         </div>
-        <div class="row bg-info text-center">
-            <h3>泰山咖啡莊園，傳承熱情coding精神</h3>
-            <p>任何服務問題或建議，歡迎您透過克服表單告知我們，謝謝</p>
+        <div class="row text-center">
+            <h4>泰山咖啡莊園，傳承熱情coding精神</h3>
+                <p>任何服務問題或建議，歡迎您透過克服表單告知我們，謝謝</p>
         </div>
-        <div class="row">
-            <div class="col-lg-6 bg-primary">
-                <p>姓名</p>
-                <input type="text">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-5">
+                <label class="form-label">姓名</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control">
+                    <span class="input-group-text">
+                        先生<input type="radio">
+                        女士<input type="radio">
+                    </span>
+                </div>
             </div>
-            <div class="col-lg-6">
-                <p>電話</p>
-                <input type="text" style="width: 100;">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 bg-primary">
-                <p>電子信箱</p>
-                <input type="text">
-            </div>
-            <div class="col-lg-6">
-                <p>問題類型</p>
-                <input type="text">
+            <div class="col-lg-5">
+                <label class="form-label">電話</label>
+                <input type="text" class="form-control mb-3">
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <p>意見要求</p>
-                <input type="text">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-5 ">
+                <label class="form-label">電子信箱</label>
+                <input type="text" class="form-control mb-3">
+            </div>
+            <div class="col-lg-5">
+                <label class="form-label">問題類型</label>
+                <select class="form-select mb-3">
+                    <option selected>餐飲建議</option>
+                </select>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 bg-danger">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-10">
+                <label class="form-label">意見要求</label>
+                <textarea class="form-control mb-3" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-10 ">
                 <input type="checkbox" name="" id="">
                 <span>訂閱泰山莊園最新資訊</span>
             </div>
         </div>
-        <div class="row">
+        <br>
+        <div class="row pb-3 ">
             <div class="col-12 text-center">
-                <button class="btn" style="background: gray;">送出</button>
+                <button class="btn" style="background: gray;color: white;">送出</button>
             </div>
         </div>
     </section>
